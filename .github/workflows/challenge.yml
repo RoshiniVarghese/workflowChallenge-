@@ -22,11 +22,11 @@ jobs:
                 runs-on: macos-latest
                 steps: 
                  - name: step 3
-                 - run: date
+                   run: date
         job4: 
                 name: Fourth Job
                 runs-on: ubuntu-18.04
                 needs: [job1, job2, job3]
                 steps:
                  - name: step 4 conditional
-                 - run: date
+                   run: date
