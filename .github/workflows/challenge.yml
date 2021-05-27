@@ -9,24 +9,24 @@ jobs:
                 runs-on: ubuntu-latest 
                 steps: 
                 - name: step 1
-                run: date
+                - run: date
         job2:
                 name: Second Job
                 runs-on: windows-latest
                 steps:
                 - name: step 2
-                run: Get-Date
+                - run: Get-Date
 
         job3:
                 name: Third Job
                 runs-on: macos-latest
                 steps: 
                 - name: step 3
-                run: date
+                - run: date
         job4: 
                 name: Fourth Job
                 runs-on: ubuntu-18.04
                 needs: [job1, job2, job3]
                 steps:
                 - name: step 4 conditional
-                run: date
+                - run: date
